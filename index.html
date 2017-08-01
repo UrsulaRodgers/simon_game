@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="simon.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="simon.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+<div id="container" class="text-center">
+	<h1 id="title">Repeat After Me...</h1>
+	<h3 id="sub">(A JS version of the Simon&#174; Game)</h3>	
+	<div class="section" id="top">
+		<div class="btn colourbox dark-red" id="red"></div>
+		<div class="btn colourbox" id="blue"></div>
+	</div>
+	<div class="section" id="bottom">
+		<div class="btn colourbox" id="yellow"></div>
+		<div class="btn colourbox" id="green"></div>
+	</div>
+	<div class="section">
+		<div id="central">
+			<button class="btn btn-success" id="reset">RESET</button>
+			<div id="display"><p>0</p></div>
+			<button class="btn btn-primary" id="easy">EASY</button>
+			<button class="btn btn-danger" id="hard">HARD</button>
+		</div>
+	</div>
+</div>
+<audio id="audio1">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+</audio>
+<audio id="audio2">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+</audio>
+<audio id="audio3">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+</audio>
+<audio id="audio4">
+	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+</audio>
+<audio id="wrong">
+	<source src="wrong.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
