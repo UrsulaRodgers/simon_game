@@ -1,0 +1,112 @@
+.body {
+	background-color:grey;
+	font-family: 'Open Sans Condensed', sans-serif;
+}	
+#container {
+	width:500px;
+	height:500px;
+	margin: 50px auto;
+}
+
+#title {
+	color:#fff;
+	font-size:3.5em;
+}
+#sub {
+	color:#fff;
+	font-size:1em;
+}
+.section {
+	position:relative;
+	top:5%;
+}
+
+#bottom {
+	position:relative;
+	top:7%;
+}
+.colourbox {
+	position:relative;
+	width:43%;
+	height:215px;
+	margin:1%;
+	padding-bottom:30%;
+}
+
+#red {
+	background-color:#B2130C;
+	border-top-left-radius:100%;
+}
+
+#blue {
+	background-color:#0A158A;
+	border-top-right-radius:100%;
+}
+
+#yellow {
+	background-color:#D2CC13;
+	border-bottom-left-radius:100%;
+}
+
+#green {
+	background-color:#16980E;
+	border-bottom-right-radius:100%;
+}
+
+#central {
+	width:50%;
+	height:250px;
+	background-color:white;
+	border-radius:50%;
+	margin:-67.5% auto -65% 25%;
+	position:relative;
+}
+
+#display {
+	background-color:#BDC3BE;
+	border:4px solid grey;
+	border-radius:5%;
+	width:50%;
+	height:27%;
+	margin: 0 auto;
+	position:relative;
+	top:23%;
+}
+
+#display > p {
+	font-size:3em;
+	color:red;
+}
+
+#reset {
+	position:relative;
+	top:35px;
+	
+}
+button {
+	position:relative;
+	top:80px;
+}
+
+@media screen and (max-width: 500px){
+/*this scales the container div and therefore all of its contents*/
+  #container {
+  	position:relative;
+  	top:40px;
+    
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    
+    left: 47%;
+    margin-left: -142px;
+  }
+}
