@@ -1,8 +1,9 @@
+/*Simon Game CSS*/
 .body {
 	background-color:grey;
-	font-family: 'Open Sans Condensed', sans-serif;
 }	
 #container {
+	font-family: 'Open Sans Condensed', sans-serif;
 	width:500px;
 	height:500px;
 	margin: 50px auto;
@@ -11,6 +12,8 @@
 #title {
 	color:#fff;
 	font-size:3.5em;
+	position:relative;
+	top:2%;
 }
 #sub {
 	color:#fff;
@@ -58,7 +61,7 @@
 	height:250px;
 	background-color:white;
 	border-radius:50%;
-	margin:-67.5% auto -65% 25%;
+	margin:-69.5% auto -65% 25%;
 	position:relative;
 }
 
@@ -83,30 +86,27 @@
 	top:35px;
 	
 }
-button {
+button > .btn-sucess, .btn-primary, .btn-danger {
 	position:relative;
 	top:80px;
 }
 
 @media screen and (max-width: 500px){
 /*this scales the container div and therefore all of its contents*/
-  #container {
-  	position:relative;
-  	top:40px;
-    
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -o-transform: scale(0.6);
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
-    
-    -o-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    transform-origin: 0 0;
-    
-    left: 47%;
-    margin-left: -142px;
-  }
+  	#container {
+  		position:relative;
+  		top:40px;
+    		-moz-transform: scale(0.6);
+    		-ms-transform: scale(0.6);
+    		-o-transform: scale(0.6);
+    		-webkit-transform: scale(0.6);
+    		transform: scale(0.6);
+   		-o-transform-origin: 0 0;
+    		-ms-transform-origin: 0 0;
+    		-webkit-transform-origin: 0 0;
+    		-moz-transform-origin: 0 0;
+    		transform-origin: 0 0;
+    		left: 47%;
+    		margin-left: -142px;
+  	}
 }
